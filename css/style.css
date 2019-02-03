@@ -66,6 +66,18 @@ blockquote {
 }
 
 /* ********** Materialize Styles ********** */
+nav, .navbar-fixed {
+    background-color: var(--second-color);
+    height: var(--nav-height);
+    line-height: var(--nav-height);
+}
+
+.brand-logo img {
+    padding: var(--logo-spacing);
+    max-height: var(--nav-height);
+}
+
+.side-nav-trigger:hover { color: var(--main-color);}
 
 
 
