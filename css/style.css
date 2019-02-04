@@ -117,8 +117,7 @@ nav,
 
 .section {
     width: 100%;
-    /* min-height: calc(100vh - var(--nav-height)); */
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .slider {
@@ -138,14 +137,42 @@ nav,
 
 .Services img { background-color: var(--alternate-color); }
 
+.ResponsiveSites figure {
+    margin: 0;
+    text-align: center;
+}
+
+.ResponsiveSites figure img {
+    padding: .5rem;
+    background-color: var(--alternate-color);
+}
+
+.WorkFlow-steps sup {
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.Footer {
+    padding: 1rem;
+    background-color: var(--second-color);
+    text-align: center;
+}
+
+.SocialMedia {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* ********** Media Queries Medium ********** */
 @media only screen and (min-width: 601px) {
 }
 
 /* ********** Media Queries Large ********** */
 @media only screen and (min-width: 993px) {
-    .HeroImage-container, 
-    .Services .row{
+    .u-lg-flexCenter {
         min-height: inherit;
         display: flex;
         justify-content: center;
