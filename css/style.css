@@ -126,6 +126,44 @@ nav,
     height: auto;
 }
 
+/* label color */
+.input-field label,
+.input-field .prefix.active {
+    color: var(--main-color) !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input:focus + label,
+.input-field textarea:focus + label{
+    color: var(--main-color) !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input:focus,
+.input-field textarea:focus {
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 1px 0 0 var(--main-color) !important;
+}
+/* valid color */
+.input-field input[type=text].valid,
+.input-field textarea.valid {
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 1px 0 0 var(--main-color) !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid var(--alternate-color) !important;
+    box-shadow: 0 1px 0 0 var(--alternate-color) !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: var(--main-color) !important;
+}
+
+.input-field .btn { background-color: var(--main-color) !important; }
+
+.input-field .btn:hover { background-color: var(--second-color) !important; }
+
 /* ********** My Styles ********** */
 .HeroImage {
     min-height: calc(100vh - var(--nav-height));
@@ -150,6 +188,29 @@ nav,
 .WorkFlow-steps sup {
     font-size: 1rem;
     color: var(--main-color);
+}
+
+.SinglePage,
+.MultiPage {
+    background-image: url('../img/site-singlepage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MultiPage {
+    margin-top: -1.5rem;
+    background-image: url('../img/site-multipage.jpg');
+}
+
+.SinglePage > .section,
+.MultiPage > .section {
+    background-color: var(--bg-modal-color);
+    height: inherit;
+}
+
+.AboutInfo {
+    padding: 1rem;
+    background-color: var(--second-modal-color);
 }
 
 .Footer {
